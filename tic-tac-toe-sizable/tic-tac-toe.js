@@ -12,10 +12,14 @@ const showTurn = document.querySelector(".showTurn span");
 
 let turn = 0;
 
-// const boxRowNumDecide = window.prompt(
-//   "Choose number of box in a rows you would like to have:"
-// );
-let boxRowNumDecide = 5;
+let boxRowNumDecide = 0;
+while (0 >= boxRowNumDecide || !boxRowNumDecide || boxRowNumDecide > 10) {
+  boxRowNumDecide = window.prompt(
+    "Choose number of boxes in a row (less than 10):"
+  );
+  console.log(boxRowNumDecide);
+}
+// let boxRowNumDecide = 5;
 
 let boxContainer = document.querySelector(".tic-background .container");
 boxContainer.innerHTML = "";
