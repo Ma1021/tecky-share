@@ -1,0 +1,134 @@
+.outerLayer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gameContainer {
+  width: 80%;
+  max-width: 800px;
+  height: fit-content;
+  border: 1px solid #e3e5e8;
+  border-radius: 10px;
+}
+
+i {
+  -webkit-text-stroke: 1px;
+  font-size: 20px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+.turn {
+  display: flex;
+  flex-direction: column;
+  /* it does not work */
+  align-content: center;
+}
+
+.turn .players {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.turn .player-turn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #e3e5e8;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 13px -2px rgba(132, 132, 132, 0.55);
+}
+
+.player-turn i {
+  font-size: 0.8rem;
+}
+
+.turn .current {
+  border-bottom: 2px solid #14bdac;
+}
+
+.turn .showTurn {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.turn .showTurn span {
+  color: #70757a;
+}
+
+.showTurn span.result {
+  color: #bc1b2c;
+}
+
+.turn .showTurn i {
+  font-size: 0.8rem;
+}
+
+.tic-background {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #1bbcab;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 5px;
+  width: calc(75px * 3 + 10px);
+  background-color: #15a091;
+}
+
+.box {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1bbcab;
+}
+
+.box i {
+  font-size: 40px;
+  color: #f4ead2;
+  -webkit-text-stroke: 3px;
+}
+
+button#restart {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: arial, sans-serif;
+  color: #14bdac;
+  padding: 15px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.winningBox {
+  background-color: #ab5560;
+  color: #fffff4;
+}
